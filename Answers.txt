@@ -1,0 +1,17 @@
+1. Yes. For coverage, I focused on satisfied each line of code, while for mutation test, I think about how mutants will be leading to different results compared to the original codes.
+
+2. No. (Do they cover all mutants? I am not sure about this. I guess YES) Coverage test goes through every line, so all mutants will be covered. However, the mutants might not be caught as the test case might be too broad to kill some mutants.
+
+3. I think it is because some mutants just behave the same as the original one and they are also correct to fulfill the same operation.
+
+4. Mutant 11: When a<=0 not equal to b<=0, the triangle is clearly invalid. In case they are both <=0, and c>0, invalid will still be returned. 
+Mutant 59: trian can never go below zero, so the mutant does not change the classification.
+mutant 76: If a+b<=c exclusively or a+c<=b, the triangle is invalid. And it is impossible they can satisfy both mathematically.
+mutant 87: Same logic as mutant 76.
+mutant 101: The condition where trian equals to zero is checked before the trian <= 1, so it works the same as the original.
+mutant 111: trian == 1 == a+b>c return the same classification result as trian == 1 && a+b>c
+mutant 136: trian cannot go beyond 3. So trian==3 is the same as trian>=3.
+mutant 145: same as mutant 111.
+
+5. (Not sure) the coverage will be stay the same while the mutation will be zero.
+6. Test case redundancy: Test cases that are useless in detecting the bugs in the codes or repetitive test cases that only detect the same bugs as other existing test cases.
